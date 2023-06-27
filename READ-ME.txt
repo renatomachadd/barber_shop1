@@ -1,0 +1,20 @@
+************************************
+Sistema agendamento de barbearia
+*************************************
+
+1- Deve-se criar uma base de dados com o nome 'barbearia_bd'
+
+2- Para execução do FrontEnd, realizar os processos abaixo através do GitBash:
+	1- Ir até o diretório/pasta frontend
+	2- Executar npm install
+	3- Executar ng serve
+
+3- Para execução do BackEnd, realizar os processos abaixo através do GitBash;
+	1- Ir até o diretório/pasta backend
+	2- Executar npm install
+	3- npm run start:dev
+
+
+Observações:
+- Collection do Postman com CRUD's e exceções das regras de negócio disponível através do arquivo 'Collection_Barbearia.postman_collection.json'
+- Configuração do banco de dados disponível no arquivo: 'backend->src->database->data-source.ts' E 'backend->ormconfig.json'

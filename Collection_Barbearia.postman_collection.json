@@ -1,0 +1,1318 @@
+{
+	"info": {
+		"_postman_id": "18cc879c-de27-4432-ad15-660a49b49a9a",
+		"name": "Collection_Barbearia",
+		"description": "HAR To Postman Generated Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "3783106"
+	},
+	"item": [
+		{
+			"name": "Servicos",
+			"item": [
+				{
+					"name": "localhost:3000/servicos",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\t\"descricao\": \"Degrade simples\",\r\n\t\t\"valor\": 25.99\r\n\t}"
+						},
+						"url": "{{baseURL1}}/servicos"
+					},
+					"response": [
+						{
+							"name": "created / 201",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"url": "{{baseURL1}}/servicos"
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "60"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"3c-lztILBSLX0hNjRcC1QwXhMk7XaM\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 26 Jun 2023 20:51:56 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "application/json; charset=utf-8 content type is not supported in the response body"
+						}
+					]
+				},
+				{
+					"name": "localhost:3000/servicos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{baseURL1}}/servicos"
+					},
+					"response": [
+						{
+							"name": "successfully / 200",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": "{{baseURL1}}/servicos"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "64"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"40-deC/eVp8qGGvkt8Sh3Uf4Gc26bo\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 26 Jun 2023 13:54:16 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "application/json; charset=utf-8 content type is not supported in the response body"
+						}
+					]
+				},
+				{
+					"name": "localhost:3000/servicos/1",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\t\"servico_id\": 1,\r\n\t\t\"descricao\": \"Moicano\",\r\n\t\t\"valor\": \"50.00\"\r\n\t}"
+						},
+						"url": "{{baseURL1}}/servicos/1"
+					},
+					"response": [
+						{
+							"name": "successfully / 200",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"url": "{{baseURL1}}/servicos/1"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "44"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"2c-tCHK62bAxcnwvtQzD2avEuZDz1Y\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 26 Jun 2023 01:22:22 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "application/json; charset=utf-8 content type is not supported in the response body"
+						}
+					]
+				},
+				{
+					"name": "localhost:3000/servicos/1",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": "{{baseURL1}}/servicos/1"
+					},
+					"response": [
+						{
+							"name": "not found / 404",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"url": "{{baseURL1}}/servicos/1"
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "74"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"4a-uIsviC567DIO08EpdU2PVztUrEQ\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 26 Jun 2023 01:24:32 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "application/json; charset=utf-8 content type is not supported in the response body"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Profissionais",
+			"item": [
+				{
+					"name": "localhost:3000/profissionais",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nome\": \"Profissional 1\",\r\n  \"cpf\": \"22222222200\",\r\n  \"telefone\": \"999999999\",\r\n  \"data_nascimento\": \"1990-01-01\",\r\n  \"endereco\": \"Endereço do Profissional\",\r\n  \"numero\": \"123\",\r\n  \"cidade\": \"Cidade do Profissional\",\r\n  \"cep\": \"12345-678\",\r\n  \"estado\": \"Estado do Profissional\"\r\n}"
+						},
+						"url": "{{baseURL1}}/profissionais"
+					},
+					"response": [
+						{
+							"name": "created / 201",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"url": "{{baseURL1}}/profissionais"
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "259"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"103-fezkqTG59WEPz5kBD6Oe/IqkYTA\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 26 Jun 2023 20:51:47 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "application/json; charset=utf-8 content type is not supported in the response body"
+						}
+					]
+				},
+				{
+					"name": "localhost:3000/profissionais",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{baseURL1}}/profissionais"
+					},
+					"response": [
+						{
+							"name": "successfully / 200",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": "{{baseURL1}}/profissionais"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "261"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"105-+cYi9L0TUBKXCujIS9THTyNqAco\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 26 Jun 2023 20:51:51 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "application/json; charset=utf-8 content type is not supported in the response body"
+						}
+					]
+				},
+				{
+					"name": "localhost:3000/profissionais/1",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"profisional_id\":1,\r\n  \"nome\": \"Profissional 10\",\r\n  \"cpf\": \"22222222200\",\r\n  \"telefone\": \"999999999\",\r\n  \"data_nascimento\": \"1990-01-01\",\r\n  \"endereco\": \"Endereço do Profissional\",\r\n  \"numero\": \"123\",\r\n  \"cidade\": \"Cidade do Profissional\",\r\n  \"cep\": \"12345-678\",\r\n  \"estado\": \"Estado do Profissional\"\r\n}"
+						},
+						"url": "{{baseURL1}}/profissionais/1"
+					},
+					"response": [
+						{
+							"name": "not found / 404",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"url": "{{baseURL1}}/profissionais/1"
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "79"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"4f-4AaHjrDkfC5GloVfYvH26OHdlh4\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 25 Jun 2023 20:03:50 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "application/json; charset=utf-8 content type is not supported in the response body"
+						}
+					]
+				},
+				{
+					"name": "localhost:3000/profissionais/3",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": "{{baseURL1}}/profissionais/3"
+					},
+					"response": [
+						{
+							"name": "not found / 404",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"url": "{{baseURL1}}/profissionais/3"
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "79"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"4f-4AaHjrDkfC5GloVfYvH26OHdlh4\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 25 Jun 2023 20:00:31 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "application/json; charset=utf-8 content type is not supported in the response body"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Agendamentos",
+			"item": [
+				{
+					"name": "localhost:3000/agendamentos/",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"cliente\": 1,\r\n  \"profissional\": 1,\r\n  \"servico\": 1,\r\n  \"data\": \"2024-06-23\",\r\n  \"horario_inicio\": \"10:00\",\r\n  \"horario_fim\": \"11:00\"\r\n}"
+						},
+						"url": "{{baseURL1}}/agendamentos/"
+					},
+					"response": [
+						{
+							"name": "not found / 404",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"url": "{{baseURL1}}/agendamentos/"
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "78"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"4e-39QcNU806uu+4vmNWuoMdwquFdg\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 26 Jun 2023 20:53:49 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "application/json; charset=utf-8 content type is not supported in the response body"
+						}
+					]
+				},
+				{
+					"name": "localhost:3000/agendamentos/",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"agendamento_id\": 1,\r\n  \"cliente\": 1,\r\n  \"profissional\": 1,\r\n  \"servico\": 1,\r\n  \"data\": \"2025-04-23\",\r\n  \"horario_inicio\": \"10:00\",\r\n  \"horario_fim\": \"11:00\"\r\n}"
+						},
+						"url": "{{baseURL1}}/agendamentos/"
+					},
+					"response": [
+						{
+							"name": "successfully / 200",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"url": "{{baseURL1}}/agendamentos/"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "48"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"30-8QlzWRo7OXOyPnv7cW89diHJbv0\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 26 Jun 2023 20:54:49 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "application/json; charset=utf-8 content type is not supported in the response body"
+						}
+					]
+				},
+				{
+					"name": "localhost:3000/agendamentos",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": "{{baseURL1}}/agendamentos"
+					},
+					"response": [
+						{
+							"name": "successfully / 200",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"url": "{{baseURL1}}/agendamentos"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "2"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"2-l9Fw4VUO7kr8CvBlt4zaMCqXZ0w\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 26 Jun 2023 20:51:22 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "application/json; charset=utf-8 content type is not supported in the response body"
+						}
+					]
+				},
+				{
+					"name": "localhost:3000/agendamentos/1",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": "{{baseURL1}}/agendamentos/1"
+					},
+					"response": [
+						{
+							"name": "successfully / 200",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"url": "{{baseURL1}}/agendamentos/1"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "47"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"2f-Cka401foZpS0LQLNERO7Ceo/PzI\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 26 Jun 2023 21:48:26 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "application/json; charset=utf-8 content type is not supported in the response body"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Clientes",
+			"item": [
+				{
+					"name": "localhost:3000/clientes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{baseURL1}}/clientes"
+					},
+					"response": [
+						{
+							"name": "successfully / 200",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": "{{baseURL1}}/clientes"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "2"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"2-l9Fw4VUO7kr8CvBlt4zaMCqXZ0w\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 26 Jun 2023 13:01:02 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "application/json; charset=utf-8 content type is not supported in the response body"
+						}
+					]
+				},
+				{
+					"name": "localhost:3000/clientes/2",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\t\"cliente_id\": 2,\r\n\t\t\"nome\": \"Rodrigo Moraes\",\r\n\t\t\"cpf\": \"12345678900\",\r\n\t\t\"telefone\": \"999999999\",\r\n\t\t\"data_nascimento\": \"1990-01-01\",\r\n\t\t\"endereco\": \"Endereço do Cliente\",\r\n\t\t\"numero\": \"123\",\r\n\t\t\"cidade\": \"Cidade do Cliente\",\r\n\t\t\"cep\": \"12345-678\",\r\n\t\t\"estado\": \"Estado do Cliente\"\r\n\t}"
+						},
+						"url": "{{baseURL1}}/clientes/2"
+					},
+					"response": [
+						{
+							"name": "successfully / 200",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"url": "{{baseURL1}}/clientes/2"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "239"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"ef-Xqx9JfvkxHw/2ECwWZIWI3TQ8N4\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 25 Jun 2023 20:06:08 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "application/json; charset=utf-8 content type is not supported in the response body"
+						}
+					]
+				},
+				{
+					"name": "localhost:3000/clientes/6",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": "{{baseURL1}}/clientes/6"
+					},
+					"response": [
+						{
+							"name": "successfully / 200",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"url": "{{baseURL1}}/clientes/6"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "43"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"2b-EgHYHGoS/Wvs6Zv6G2KqjGKSJNQ\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 26 Jun 2023 01:17:05 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "application/json; charset=utf-8 content type is not supported in the response body"
+						}
+					]
+				},
+				{
+					"name": "localhost:3000/clientes",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nome\": \"Cliente 1\",\r\n  \"cpf\": \"11111111100\",\r\n  \"telefone\": \"111111111\",\r\n  \"data_nascimento\": \"1988-05-10\",\r\n  \"endereco\": \"Rua dos Profissionais 1\",\r\n  \"numero\": \"1\",\r\n  \"cidade\": \"Cidade dos Profissionais\",\r\n  \"cep\": \"12345-111\",\r\n  \"estado\": \"Estado dos Profissionais\"\r\n}"
+						},
+						"url": "{{baseURL1}}/clientes"
+					},
+					"response": [
+						{
+							"name": "created / 201",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"url": "{{baseURL1}}/clientes"
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "40"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"28-08cGyMwHg+7EjhTggzQVC7XLhOU\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 26 Jun 2023 20:52:09 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "application/json; charset=utf-8 content type is not supported in the response body"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Regras de Negocio",
+			"item": [
+				{
+					"name": "localhost:3000/profissionais",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nome\": \"Profissional 9\",\r\n  \"cpf\": \"22221122200\",\r\n  \"telefone\": \"999998899\",\r\n  \"data_nascimento\": \"2024-01-01\",\r\n  \"endereco\": \"Endereço do Profissional\",\r\n  \"numero\": \"123\",\r\n  \"cidade\": \"Cidade do Profissional\",\r\n  \"cep\": \"12345-678\",\r\n  \"estado\": \"Estado do Profissional\"\r\n}"
+						},
+						"url": "{{baseURL1}}/profissionais"
+					},
+					"response": [
+						{
+							"name": "created / 201",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"url": "{{baseURL1}}/profissionais"
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "259"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"103-fezkqTG59WEPz5kBD6Oe/IqkYTA\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 26 Jun 2023 20:51:47 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "application/json; charset=utf-8 content type is not supported in the response body"
+						}
+					]
+				},
+				{
+					"name": "localhost:3000/agendamentos/",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"cliente\": 1,\r\n  \"profissional\": 1,\r\n  \"servico\": 1,\r\n  \"data\": \"2002-06-23\",\r\n  \"horario_inicio\": \"10:00\",\r\n  \"horario_fim\": \"11:00\"\r\n}"
+						},
+						"url": "{{baseURL1}}/agendamentos/"
+					},
+					"response": [
+						{
+							"name": "not found / 404",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"url": "{{baseURL1}}/agendamentos/"
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "78"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"4e-39QcNU806uu+4vmNWuoMdwquFdg\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 26 Jun 2023 20:53:49 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "application/json; charset=utf-8 content type is not supported in the response body"
+						}
+					]
+				},
+				{
+					"name": "localhost:3000/clientes",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nome\": \"Cliente 4\",\r\n  \"cpf\": \"11661111100\",\r\n  \"telefone\": \"113311111\",\r\n  \"data_nascimento\": \"2024-05-10\",\r\n  \"endereco\": \"Rua dos Profissionais 1\",\r\n  \"numero\": \"1\",\r\n  \"cidade\": \"Cidade dos Profissionais\",\r\n  \"cep\": \"12345-111\",\r\n  \"estado\": \"Estado dos Profissionais\"\r\n}"
+						},
+						"url": "{{baseURL1}}/clientes"
+					},
+					"response": [
+						{
+							"name": "created / 201",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"url": "{{baseURL1}}/clientes"
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "40"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"28-08cGyMwHg+7EjhTggzQVC7XLhOU\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 26 Jun 2023 20:52:09 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "application/json; charset=utf-8 content type is not supported in the response body"
+						}
+					]
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "baseURL1",
+			"value": "http://localhost:3000",
+			"type": "any"
+		}
+	]
+}

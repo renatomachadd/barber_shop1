@@ -1,0 +1,24 @@
+<h2>Atualizar Serviço</h2>
+<form [formGroup]="form" (ngSubmit)="atualizar()">
+  <div class="row">
+    <div class="col-4">
+      <mat-form-field class="example-full-width">
+        <mat-label>Descrição</mat-label>
+        <input matInput formControlName="descricao" />
+      </mat-form-field>
+    </div>
+    <div class="col-4">
+      <mat-form-field class="example-full-width">
+        <mat-label>Valor</mat-label>
+        <input matInput formControlName="valor" />
+      </mat-form-field>
+    </div>
+    <div class="col-4">
+      <div class="wrapButton">
+        <button mat-raised-button color="primary" type="submit">
+          Atualizar
+        </button>
+      </div>
+    </div>
+  </div>
+</form>

@@ -1,0 +1,42 @@
+<p>Nome: {{ data.nome }}</p>
+<form [formGroup]="form" (ngSubmit)="atualizar()">
+  <mat-form-field class="example-full-width">
+    <mat-label>Nome</mat-label>
+    <input matInput formControlName="nome" />
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width">
+    <mat-label>CPF</mat-label>
+    <input matInput formControlName="cpf" />
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width">
+    <mat-label>Telefone</mat-label>
+    <input matInput formControlName="telefone" />
+  </mat-form-field>
+  <mat-form-field class="example-full-width">
+    <mat-label>Data de nascimento</mat-label>
+    <input matInput formControlName="data_nascimento" />
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width">
+    <mat-label>Endereço</mat-label>
+    <input matInput formControlName="endereco" />
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width">
+    <mat-label>CEP</mat-label>
+    <input matInput formControlName="cep" />
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width">
+    <mat-label>Cidade</mat-label>
+    <input matInput formControlName="cidade" />
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width">
+    <mat-label>Estado</mat-label>
+    <input matInput formControlName="estado" />
+  </mat-form-field>
+  <button mat-raised-button color="primary" type="submit">Atualizar</button>
+</form>

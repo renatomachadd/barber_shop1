@@ -1,0 +1,16 @@
+{
+  "type": "postgres",
+  "host": "localhost",
+  "port": 5432,
+  "username": "postgres",
+  "password": "admin",
+  "database": "barbearia_bd",
+  "synchronize": true,
+  "logging": true,
+  "entities": ["src/**/*.entity{.ts,.js}"],
+  "migrations": ["src/migrations/*{.ts,.js}"],
+  "cli": {
+    "migrationsDir": "src/migrations",
+    "seedsDir": "src/seeds"
+  }
+}

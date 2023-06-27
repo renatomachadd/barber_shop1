@@ -1,0 +1,101 @@
+<mat-accordion class="example-headers-align" multi>
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title> Novo agendamento </mat-panel-title>
+      <mat-panel-description>
+        Preencha os dados do novo agendamento
+        <mat-icon>account_circle</mat-icon>
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+
+    <form [formGroup]="form" (ngSubmit)="criaAgendamento()">
+      <div class="row">
+        <div class="col-4">
+          <mat-form-field>
+            <input
+              matInput
+              formControlName="cliente"
+              placeholder="Cliente"
+              [matAutocomplete]="clienteAutocomplete"
+              formControlName="cliente"
+            />
+            <mat-autocomplete #clienteAutocomplete="matAutocomplete">
+              <mat-option
+                *ngFor="let cliente of clientes"
+                [value]="cliente.cliente_id"
+              >
+                {{ cliente.nome }}
+              </mat-option>
+            </mat-autocomplete>
+          </mat-form-field>
+        </div>
+        <div class="col-4">
+          <mat-form-field>
+            <input
+              matInput
+              formControlName="profissional"
+              placeholder="Profissional"
+              [matAutocomplete]="profissionalAutocomplete"
+              formControlName="profissional"
+            />
+            <mat-autocomplete #profissionalAutocomplete="matAutocomplete">
+              <mat-option
+                *ngFor="let profissional of profissionais"
+                [value]="profissional.profissional_id"
+              >
+                {{ profissional.nome }}
+              </mat-option>
+            </mat-autocomplete>
+          </mat-form-field>
+        </div>
+        <div class="col-4">
+          <mat-form-field>
+            <input
+              matInput
+              formControlName="servico"
+              placeholder="Serviço"
+              [matAutocomplete]="servicoAutocomplete"
+              formControlName="servico"
+            />
+            <mat-autocomplete #servicoAutocomplete="matAutocomplete">
+              <mat-option
+                *ngFor="let servico of servicos"
+                [value]="servico.servico_id"
+              >
+                {{ servico.descricao }}
+              </mat-option>
+            </mat-autocomplete>
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-4">
+          <mat-form-field>
+            <mat-label>Data</mat-label>
+            <input matInput [matDatepicker]="picker" formControlName="data" />
+            <mat-datepicker-toggle
+              matIconSuffix
+              [for]="picker"
+            ></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+          </mat-form-field>
+        </div>
+        <div class="col-4">
+          <mat-form-field class="example-full-width">
+            <mat-label>Início</mat-label>
+            <input matInput formControlName="horario_inicio" />
+          </mat-form-field>
+        </div>
+        <div class="col-4">
+          <mat-form-field class="example-full-width">
+            <mat-label>Fim</mat-label>
+            <input matInput formControlName="horario_fim" />
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="col-4">
+        <button mat-raised-button color="primary" type="submit">Salvar</button>
+      </div>
+    </form>
+  </mat-expansion-panel>
+</mat-accordion>

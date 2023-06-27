@@ -1,0 +1,31 @@
+<mat-accordion class="example-headers-align" multi>
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title> Novo Serviço </mat-panel-title>
+      <mat-panel-description>
+        Preencha os dados do novo Serviço
+        <mat-icon>account_circle</mat-icon>
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+
+    <form [formGroup]="form" (ngSubmit)="criaServico()">
+      <div class="row">
+        <div class="col-4">
+          <mat-form-field class="example-full-width">
+            <mat-label>Descrição</mat-label>
+            <input matInput formControlName="descricao" />
+          </mat-form-field>
+        </div>
+        <div class="col-4">
+          <mat-form-field class="example-full-width">
+            <mat-label>Valor</mat-label>
+            <input matInput formControlName="valor" />
+          </mat-form-field>
+        </div>
+        <div class="col-4">
+          <button mat-raised-button color="primary" type="submit">Criar</button>
+        </div>
+      </div>
+    </form>
+  </mat-expansion-panel>
+</mat-accordion>
